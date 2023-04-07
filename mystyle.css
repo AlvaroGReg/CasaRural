@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration-color: #000;
+}
+
+:root {
+	--background-color: #4ab900;
+	--shade-color: #ffffff30;
+
+	--color-primary: #C8FF70;
+}
+
+body {
+	background-color: var(--background-color);
+}
+
+.columnsdiv {
+	display: flex;
+}
+
+.navcontainer {
+	position: fixed;
+	width: 5vw;
+	min-width: 52px;
+	min-height: 52px;
+	display: flex;
+	align-items: center;
+
+}
+
+.columnbody {
+	width: 93vw;
+}
+
+/* NAV BAR*/
+.navcontainer {
+	position: fixed;
+	top: 50%;
+	width: 4.5vw;
+	background-color: var(--color-primary);
+	border-radius: 0 25px 25px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 3;
+	padding: 5px;
+	padding-left: 0;
+}
+
+.navcontainer>.social-link {
+	display: flex;
+}
+
+.navcontainer>.social-link>img {
+	width: 3vw;
+	height: 3vw;
+	min-width: 50px;
+	min-height: 50px;
+	transition: 0.8sec;
+	z-index: 2;
+}
+
+.navcontainer>.social-link>.datadiv>a {
+	z-index: 1;
+}
+
+.navcontainer>.social-link>.datadiv {
+	position: absolute;
+	background-color: var(--color-primary);
+	width: fit-content;
+	white-space: nowrap;
+	height: 3vw;
+	transition: 0.8s;
+	display: flex;
+	align-items: center;
+	padding-right: 3px;
+	left: -200px;
+	z-index: 1;
+	border-radius: 0 10px 10px 0;
+}
+
+/*TOGGLE SOCIALS*/
+.navcontainer>.social-link:hover .datadiv {
+	left: 4vw;
+}
+
+/*HEADER*/
+
+.columnbody>.rowHeader {}
+
+.columnbody>.rowHeader>h1 {
+	position: absolute;
+	font-size: 3em;
+	color: #fff;
+}
+
+.columnbody>.rowHeader>.titlename {
+
+	top: 0;
+}
+
+.columnbody>.rowHeader>.townname {
+
+	top: 100px;
+
+}
+
+.columnbody>.rowHeader>img {}
+
+/*GALLERY*/
+.columnbody>.rowgallery {
+	width: 100%;
+}
+
+.columnbody>.rowgallery>.gallerycontainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.columnbody>.rowgallery>.gallerycontainer>img {
+
+	width: 512px;
+	height: 512px;
+}
+
+/*OTHERS*/
+.columnbody>.rowothers {
+	display: flex;
+}
+
+.columnbody>.rowothers>.colmaps {}
+
+.columnbody>.rowothers>.colmaps>h1 {}
+
+.columnbody>.rowothers>.colmaps>iframe {
+	width: 512px;
+	height: 512px;
+}
+
+.columnbody>.rowothers>.colinfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.columnbody>.rowothers>.colinfo>h1 {}
+
+.columnbody>.rowothers>.colinfo>.listscontainer {
+	display: flex;
+}
+
+.columnbody>.rowothers>.colinfo>.listscontainer>.col {}
+
+.columnbody>.rowothers>.colinfo>.col>ul {}
+
+.columnbody>.rowothers>.colinfo>.col>ul>li {}
+
+.columnbody>.rowothers>.colinfo>.col>ul>li>p {}
+
+/*FOOTER*/
