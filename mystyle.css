@@ -31,14 +31,14 @@
 }
 
 p{
-	font-size: 3em;
+	font-size: 3.2em;
 	font-family: "textfont";
 	color: var(--font-color);
 }
 
-h1,h2,h3,h4{
+h3{
 	font-family: "titlesfont";
-	font-size: 4.5em;
+	font-size: 3.5em;
 	color: var(--font-color);
 }
 
@@ -48,6 +48,10 @@ body {
 	flex-direction: column;
 	align-items: center;
 	gap: 40px;
+}
+
+section{
+	margin-top: 10vh;
 }
 
 .columnsdiv {
@@ -75,6 +79,8 @@ body {
 
 .navcontainer>.social-link {
 	display: flex;
+	align-items: center;
+	position: relative;
 }
 
 .navcontainer>.social-link>img {
@@ -94,29 +100,27 @@ body {
 
 .navcontainer>.social-link>.datadiv {
 	position: absolute;
-	background-color: var(--color-accent);
-	width: fit-content;
-	white-space: nowrap;
-	height: 3vw;
-	transition: 0.8s;
-	display: flex;
-	align-items: center;
+	left: -300px;
 	padding-right: 3px;
-	left: -200px;
 	z-index: 1;
 	border-radius: 0 10px 10px 0;
+	white-space: nowrap;
+	display: flex;
+	justify-content: end;
+	width: 230px;
+	transition: 0.8s;
+	background-color: var(--color-accent);
 }
 
 /*TOGGLE SOCIALS*/
 .navcontainer>.social-link:hover .datadiv {
-	left: 3.5vw;
+	left: 0;
 }
 
 /*HEADER*/
 
 header{
-	height: 15vw;
-	min-height: 300px;
+	height: 25vw;
 	width: 100%;
 	overflow: hidden;
 	display: flex;
@@ -136,9 +140,10 @@ header>div{
 
 header>div>h1 {
 	position: absolute;
-	font-size: 8em;
+	font-size: 6.5em;
 	font-family: "headerfont";
 }
+
 header>div>img{
 	position: absolute;
 	height: 100%;
@@ -151,7 +156,22 @@ header>img {
     width: 100%;
 }
 
+/*CARACS*/
+
+.rowinfo>.listscontainer{
+	display: flex;
+	justify-content: space-evenly;
+}
+
 /*GALLERY*/
+
+main{
+	max-width: 90vw;
+}
+
+.rowgallery{
+	max-width: 100%;
+}
 .hello {
 	opacity: 1 !important;
   }
@@ -217,46 +237,22 @@ header>img {
   }
   @media (max-width: 400px) {
 	.gallery {
-	  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+	  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 	}
   }
 
-/*OTHERS*/
-main>.rowothers {
-	margin-top: 100px;
+/*MAP*/
+.maps{
 	display: flex;
 	justify-content: center;
-	gap: 90px;
 }
 
-main>.rowothers>.colmaps>iframe {
-	width: 40vw;
-	height: 20vw;
-	min-width: 150px;
-	min-height: 100px;
+.maps>iframe {
+	width: 60vw;
+	height: 50vw;
+	min-width: 200px;
+	min-height: 200px;
 }
-
-main>.rowothers>.colinfo {
-	display: flex;
-	flex-direction: column;
-}
-
-main>.rowothers>.colinfo>h1 {}
-
-main>.rowothers>.colinfo>.listscontainer {
-	display: flex;
-	gap: 30px;
-}
-
-.rowothers>.colinfo>.listscontainer>.col {}
-
-.rowothers>.colinfo>.col>ul {
-	list-style-type: circle;
-}
-
-main>.rowothers>.colinfo>.col>ul>li {}
-
-
 
 /*FOOTER*/
 footer {
@@ -292,22 +288,71 @@ footer>div>ul>a>li>img {
 
 /*RESPONSIVE*/
 
-@media only screen and (max-width: 1200px) and (min-width: 960px) {
-	
+@media only screen and (min-width:720px) and (max-width: 960px){
+
 	header>div>h1 {
-		position: absolute;
-		font-size: 6em;
-		font-family: "headerfont";
+		font-size: 5em
 	}
 
-	main>.rowothers>.colinfo>.col>ul>li>p {
-		font-size: 1.5em;
+	h3{
+		font-size: 2em;
+	}
+
+	footer p{
+		font-size: 1.8em;
+	}
+
+	.navcontainer>.social-link:hover .datadiv {
+
 	}
   }
 
-  @media only screen and (max-width: 959px) {
-	
-	header>div>h1 {
-		font-size: 4em;
+  @media only screen and (min-width:480px) and (max-width: 719px){
+
+	section{
+		margin-bottom: 50px;
 	}
+	header>div>h1 {
+		font-size: 3em
+	}
+
+	h3{
+		font-size: 2em;
+	}
+
+	footer p{
+		font-size: 1.8em;
+	}
+
+  }
+
+  
+  @media only screen and (max-width: 479px){
+
+	section{
+		margin-bottom: 50px;
+	}
+
+	header>div>h1 {
+		font-size: 2.3em;
+	}
+
+	p{
+		font-size: 2em;
+	}
+
+	h3{
+		font-size: 1.5em;
+	}
+
+	footer p{
+		font-size: 1.4em;
+	}
+
+	
+.navcontainer>.social-link>.datadiv {
+
+	width: 160px;
+}
+
   }
