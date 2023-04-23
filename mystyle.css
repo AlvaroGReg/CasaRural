@@ -63,7 +63,7 @@ section {
 	position: fixed;
 	left: 0;
 	top: 40%;
-	width: 4.5vw;
+	width: 4vw;
 	min-width: 58px;
 	max-width: 68px;
 	background-color: var(--color-accent);
@@ -84,8 +84,8 @@ section {
 }
 
 .navcontainer>.social-link>img {
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	min-width: 45px;
 	min-height: 45px;
 	max-height: 65px;
