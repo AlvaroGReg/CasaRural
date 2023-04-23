@@ -1,4 +1,4 @@
-let photosToShow = ["res/fotos/baño1.jpg","res/fotos/cocina1.jpg","res/fotos/cocina2.jpg","res/fotos/comedor1.jpg","res/fotos/comedor2.jpg","res/fotos/comedor3.jpg","res/fotos/comedor4.jpg","res/fotos/dormitorio1.jpg","res/fotos/dormitorio2.jpg","res/fotos/dormitorio3.jpg","res/fotos/dormitorio4.jpg","res/fotos/dormitorio5.jpg","res/fotos/porche1.jpg"]
+let photosToShow = ["res/fotos/comedor4.jpg","res/fotos/comedor1.jpg","res/fotos/comedor2.jpg","res/fotos/comedor3.jpg","res/fotos/porche1.jpg","res/fotos/dormitorio1.jpg","res/fotos/dormitorio2.jpg","res/fotos/dormitorio3.jpg","res/fotos/dormitorio4.jpg","res/fotos/dormitorio5.jpg","res/fotos/baño1.jpg","res/fotos/cocina1.jpg","res/fotos/cocina2.jpg",]
 
 /*MAIN GALLERY*/
 const showPhoto = (src) => {
