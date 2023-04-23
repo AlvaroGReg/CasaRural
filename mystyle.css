@@ -120,12 +120,14 @@ section {
 /*HEADER*/
 
 header {
-	height: 25vw;
+	height: 25vh;
 	width: 100%;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	position: relative;
+	background-image: url("res/header\ image.jpg.png");
+	background-position: center;
 }
 
 header>div {
@@ -150,13 +152,6 @@ header>div>img {
 	width: 100%;
 }
 
-header>img {
-	position: absolute;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
-}
-
 /*CARACS*/
 
 .rowinfo>.listscontainer {
@@ -173,90 +168,29 @@ header>img {
 	font-size: 2.5em;
 }
 
+
 /*GALLERY*/
-
-main {
-	max-width: 90vw;
+.mainphotodiv{
+	width: 90vw;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5vh;
 }
-
-.rowgallery {
+.mainphotodiv>img{
 	max-width: 100%;
+	max-height: 100%;
+}
+.subframe{
+	height: 25vh;
+	width: 90vw;
+	display: flex;
+	overflow: auto;
 }
 
-.hello {
-	opacity: 1 !important;
-}
+.subframe>img{
 
-.full {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 4;
 }
-
-.full .content {
-	background-color: rgba(0, 0, 0, 0.75) !important;
-	height: 100%;
-	width: 100%;
-	display: grid;
-}
-
-.full .content img {
-	left: 50%;
-	transform: translate3d(0, 0, 0);
-	max-width: 100%;
-	max-height: 100vh;
-	margin: auto;
-}
-
-.gallery {
-	display: grid;
-	grid-column-gap: 7px;
-	grid-row-gap: 7px;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	grid-auto-rows: 8px;
-}
-
-.gallery img {
-	max-width: 100%;
-	border-radius: 8px;
-	box-shadow: 0 0 16px #333;
-	transition: all 1.5s ease;
-}
-
-.gallery img:hover {
-	box-shadow: 0 0 32px #333;
-}
-
-.gallery .content {
-	padding: 4px;
-}
-
-.gallery .gallery-item {
-	transition: grid-row-start 300ms linear;
-	transition: transform 300ms ease;
-	transition: all 0.5s ease;
-	cursor: pointer;
-}
-
-.gallery .gallery-item:hover {
-	transform: scale(1.025);
-}
-
-@media (max-width: 600px) {
-	.gallery {
-		grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-	}
-}
-
-@media (max-width: 400px) {
-	.gallery {
-		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-	}
-}
-
 /*MAP*/
 .maps {
 	display: flex;
@@ -351,10 +285,6 @@ footer>a>img {
 	left: -400px;
 	}
 
-	.navcontainer>.social-link:hover .datadiv {
-
-	}
-
 	footer>a>img{
 		max-width: 100px;
 	}
@@ -365,43 +295,3 @@ footer>a>img {
 	}
 
 }
-/*
-@media only screen and (min-width: 3000px) {
-
-	.navcontainer{
-		max-width: 120px;
-		padding: 10px;
-		padding-left: 0;
-	}
-
-	.navcontainer>.social-link>img{
-		max-height: 100px;
-		max-width: 100px;
-	}
-
-	.navcontainer>.social-link>.datadiv{
-		left: -400px;
-		width: 500px;
-	}
-
-	.navcontainer>.social-link:hover .datadiv {
-		left: 140px;
-	}
-
-	h1{
-		font-size: 9em;
-	}
-
-	p{
-		font-size: 7em;
-	}
-
-	.navcontainer>.social-link>.datadiv {
-	width: 320px;
-	}
-
-	footer>a>img{
-		max-width: 100px;
-	}
-
-}*/
