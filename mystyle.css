@@ -149,6 +149,9 @@ header>h2 {
 }
 
 /*CARACS*/
+.listscontainer{
+  gap: 50px;
+}
 
 .rowinfo>.listscontainer {
 	display: flex;
