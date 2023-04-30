@@ -1,12 +1,23 @@
-let photosToShow = ["res/fotos/comedor4.jpg","res/fotos/comedor1.jpg","res/fotos/comedor2.jpg","res/fotos/comedor3.jpg","res/fotos/porche1.jpg","res/fotos/dormitorio1.jpg","res/fotos/dormitorio2.jpg","res/fotos/dormitorio3.jpg","res/fotos/dormitorio4.jpg","res/fotos/dormitorio5.jpg","res/fotos/baño1.jpg","res/fotos/cocina1.jpg","res/fotos/cocina2.jpg",]
+const photosToShow = ["res/fotos/comedor.jpg","res/fotos/bano_verde.jpg","res/fotos/bano1.jpg","res/fotos/bano2.jpg","res/fotos/cobertizo.jpg","res/fotos/cocina.jpg","res/fotos/comedor-chimene.jpg","res/fotos/comedor-mesa.jpg","res/fotos/comedor.jpg","res/fotos/dormitorio_peq.jpg","res/fotos/dormitorio_princ.jpg","res/fotos/dormitorio_princ2.jpg","res/fotos/dormitorio-peques.jpg","res/fotos/dormitorio2.jpg","res/fotos/escaleras.jpg","res/fotos/fachada.jpg","res/fotos/jardin.jpg","res/fotos/merendero.jpg","res/fotos/parcela.jpg","res/fotos/porche1.jpg","res/fotos/salita.jpg","res/fotos/ventana.jpg"]
 
 /*MAIN GALLERY*/
 const showPhoto = (src) => {
-    console.log(src)
     document.getElementById('mainphoto').src = src;
 }
 
-showPhoto(photosToShow[0]);
+const nextPhoto = (number) => {
+
+    let index = photosToShow.indexOf(document.getElementById('mainphoto').getAttribute('src'))
+
+    if(index==0 && number < 0){
+        index = photosToShow.length-1
+    }else if(index==photosToShow.length-1 && number>0){
+        index = 0
+    }else{
+        index += number
+    }
+    showPhoto(photosToShow[index])
+}
 
 /*SUBGALLERY*/
 const showSubGallery = () => {
@@ -18,9 +29,8 @@ const showSubGallery = () => {
         newImg.src = element
         newImg.onclick = function() {showPhoto(element)}
         subframe.appendChild(newImg)
-
-        console.log(newImg)
     });
 }
 
+showPhoto(photosToShow[0]);
 showSubGallery();
