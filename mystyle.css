@@ -93,7 +93,7 @@ section {
 .navcontainer>.social-link>.datadiv {
 	position: absolute;
 	left: -300px;
-	padding-right: 3px;
+	padding-right: 2px;
 	z-index: 1;
 	border-radius: 0 10px 10px 0;
 	white-space: nowrap;
