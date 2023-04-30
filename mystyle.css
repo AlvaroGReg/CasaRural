@@ -19,12 +19,12 @@
 
 @font-face {
 	font-family: "textfont";
-	src: url(res/fonts/Small\ Town\ Skyline.ttf);
+	src: url(res/fonts/smalltownskyline.ttf);
 }
 
 @font-face {
 	font-family: "titlefont";
-	src: url(res/fonts/Welcome\ Valentine.otf);
+	src: url(res/fonts/naturebeauty.ttf);
 }
 
 p {
@@ -131,12 +131,13 @@ header>.titleimg {
 
 header>.maintitle{
 	display: flex;
+	flex-direction: column;
 	gap: 10px;
 	align-items: center;
 	margin-bottom: 20px;
 }
 
-header>div>h1 {
+header>div>h1,h2 {
 	font-size: 5em;
 	font-family: "titlefont";
 	font-weight: 100;
@@ -149,10 +150,20 @@ header>h2 {
 }
 
 /*CARACS*/
+.rowinfo{
+	width: 100%;
+}
 
 .rowinfo>.listscontainer {
+	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.rowinfo>.listscontainer>div>ul{
+	display: flex;
+	flex-direction: column;
+	gap: 2vh !important;
 }
 
 .rowinfo>.listscontainer>div>ul>li {
@@ -308,15 +319,15 @@ footer>a>img {
 
 @media only screen and (max-width: 479px) {
 
-	header>.maintitle{
-		flex-direction: column;
-	}
 	header>div>h1 {
 		font-size: 2em;
 	}
 	
-	header>h2 {
+	header>div>h2 {
 		font-size: 2em;
+	}
+	header>h2 {
+		font-size: 1.5em;
 	}
 	section {
 		margin-bottom: 50px;
