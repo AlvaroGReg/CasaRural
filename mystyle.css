@@ -59,7 +59,7 @@ section {
 	min-width: 58px;
 	max-width: 68px;
 	background-color: var(--color-accent);
-	border-radius: 0 25px 25px 0;
+	border-radius: 0 5px 5px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -99,14 +99,13 @@ section {
 	white-space: nowrap;
 	display: flex;
 	justify-content: end;
-	width: 230px;
 	transition: 0.8s;
 	background-color: var(--color-accent);
 }
 
 /*TOGGLE SOCIALS*/
 .navcontainer>.social-link:hover .datadiv {
-	left: 0;
+	left: 52px;
 }
 
 /*HEADER*/
@@ -256,8 +255,7 @@ footer>a>img {
 	background: var(--color-primary);
 	border-radius: 10px;
   }
-  ::-webkit-scrollbar-thumb:hover{
-  }
+
 /*RESPONSIVE*/
 
 @media only screen and (min-width:720px) and (max-width: 960px) {
@@ -292,7 +290,6 @@ footer>a>img {
 	li>.bx{
 		font-size: 1.8em !important;
 	}
-
 }
 
 
@@ -320,13 +317,15 @@ footer>a>img {
 		font-size: 1.8em !important;
 	}
 
-	.navcontainer>.social-link>.datadiv {
-		width: 160px;
-	}
-
+	.social-link>img{
+		min-width: 30px !important;
+		min-height: 30px !important;
+		}
 	.navcontainer {
-		width: 4vw;
-		min-width: 50px;
+		min-width: 32px;
+	}
+	.navcontainer>.social-link:hover .datadiv{
+		left: 32px;
 	}
 
 }
@@ -335,11 +334,6 @@ footer>a>img {
 
 	p {
 		font-size: 4em;
-	}
-
-	.navcontainer>.social-link>.datadiv {
-		width: 300px;
-		left: -400px;
 	}
 
 	footer>a>img {
