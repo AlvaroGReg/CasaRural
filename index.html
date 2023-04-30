@@ -12,10 +12,11 @@
 
 <body>
 	<header>
-		<div>
-			<h1 class="titlename">Casa Rural Trefacio</h1>
-			<img src="res/header-frame.png" alt="header frame">
+		<div class="titleimg">
 		</div>
+		<div class="maintitle">
+		<h1>Alquiler vacacional:</h1><h1>Las Nogales</h1></div>
+		<h2>Trefacio de Sanabria</h2>
 	</header>
 
 	<nav class="navcontainer">
@@ -65,16 +66,21 @@
 					<ul>
 						<li>
 							<i class='bx bxs-hot'></i>
-							<p>Chimenea</p>
+							<p>Salón con chimenea</p>
 						</li>
 						<li>
 							<i class='bx bx-bowl-hot'></i>
 							<p>Cocina</p>
 						</li>
 						<li>
+							<i class='bx bxs-florist'></i>
+							<p>Jardín con barbacoa</p>
+						</li>
+						<li>
 							<i class='bx bxs-parking'></i>
 							<p>Aparcamiento</p>
 						</li>
+
 					</ul>
 				</div>
 
@@ -86,7 +92,11 @@
 						</li>
 						<li>
 							<i class='bx bx-bed'></i>
-							<p>Ocho camas</p>
+							<p>Dos camas dobles</p>
+						</li>
+						<li>
+							<i class='bx bx-bed'></i>
+							<p>Seis camas individuales</p>
 						</li>
 						<li>
 							<i class='bx bxs-shower'></i>
@@ -99,7 +109,10 @@
 		</section>
 		<section class="rowgallery">
 
-			<div class="mainphotodiv"> <img src="" id="mainphoto" alt="">
+			<div class="mainphotodiv">
+				<i class='bx bx-chevron-left' onclick="nextPhoto(-1)"></i>
+				<img src="" id="mainphoto" alt="">
+				<i class='bx bx-chevron-right' onclick="nextPhoto(1)"></i>
 			</div>
 
 			<div class="subframe" id="subframe">
