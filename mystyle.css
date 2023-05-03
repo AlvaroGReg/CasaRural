@@ -193,7 +193,7 @@ header>h2 {
 	align-items: center;
 	margin-bottom: 5vh;
 	background-color: var(--shade-color);
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .mainphotodiv>img {
@@ -349,6 +349,10 @@ footer>a>img {
 	.navcontainer>.social-link:hover .datadiv{
 		left: 32px;
 	}
+  
+  .mainphotodiv {
+	height: 390px;
+}
 
 }
 
