@@ -7,14 +7,14 @@
 }
 
 :root {
-	--background-color: #C8FF70;
+	--background-color: #CDFCB9;
 
-	--shade-color: #55db555e;
-	--shade-accent: #3079305e;
+	--shade-color: #2FC42F20;
+	--shade-accent: #54BB54;
 
 	--color-primary: #b98e00;
 	--font-color: #000000;
-	--color-accent: #55db55;
+	--color-accent: #A4EC86;
 }
 
 @font-face {
@@ -204,7 +204,7 @@ header>h2 {
 	position: absolute;
 	font-size: 3em;
 	z-index: 1;
-	background-color: var(--shade-accent);
+	background-color: var(--color-accent);
 }
 
 .mainphotodiv>.bx-chevron-left {
@@ -216,7 +216,7 @@ header>h2 {
 }
 
 .mainphotodiv>.bx:hover {
-	background-color: var(--color-accent);
+	background-color: var(--shade-accent);
 }
 
 .subframe {
@@ -225,8 +225,6 @@ header>h2 {
 	display: flex;
 	overflow: auto;
 }
-
-.subframe>img {}
 
 /*MAP*/
 .maps {
@@ -239,7 +237,7 @@ header>h2 {
 }
 
 .maps>iframe {
-	width: 60vw;
+	width: 80vw;
 	height: 40vw;
 	min-width: 200px;
 	min-height: 200px;
