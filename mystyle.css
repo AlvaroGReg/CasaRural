@@ -193,6 +193,7 @@ header>h2 {
 	align-items: center;
 	margin-bottom: 5vh;
 	background-color: var(--shade-color);
+  border-radius: 25px;
 }
 
 .mainphotodiv>img {
