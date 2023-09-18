@@ -84,8 +84,9 @@ section {
 	min-height: 45px;
 	max-height: 65px;
 	max-width: 65px;
-	transition: 0.7sec;
+	transition: 0.7s;
 	z-index: 2;
+  background-color: var(--seconday-color) !important;
 }
 
 .navcontainer>.social-link>.datadiv>a {
@@ -185,9 +186,9 @@ header>h2 {
 
 .mainphotodiv {
 	position: relative;
-	width: 90vw;
-	height: 70vh;
-	max-width: 1000px;
+	width: 95vw;
+	height: 760px;
+	max-width: 1200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -221,7 +222,7 @@ header>h2 {
 }
 
 .subframe {
-	height: 25vh;
+	height: 10vh;
 	width: 90vw;
 	display: flex;
 	overflow: auto;
